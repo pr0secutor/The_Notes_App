@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -17,7 +18,7 @@ class AddEditNoteActivity : AppCompatActivity() {
     lateinit var noteTitleEdt: EditText
     lateinit var noteEdt: EditText
     lateinit var saveBtn: Button
-    lateinit var backBtn: Button
+    lateinit var backBtn: FloatingActionButton
 
     // on below line we are creating variable for
     // viewmodal and and integer for our note id.

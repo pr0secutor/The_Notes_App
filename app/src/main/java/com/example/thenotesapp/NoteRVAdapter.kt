@@ -24,6 +24,7 @@ class NoteRVAdapter(
         val noteTV = itemView.findViewById<TextView>(R.id.idTVNote)
         val dateTV = itemView.findViewById<TextView>(R.id.idTVDate)
         val deleteIV = itemView.findViewById<ImageView>(R.id.idIVDelete)
+        val priceTV = itemView.findViewById<TextView>(R.id.idTVPrice)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -39,6 +40,7 @@ class NoteRVAdapter(
 
         holder.noteTV.setText(allNotes.get(position).noteTitle)
         holder.dateTV.setText("Last Updated : " + allNotes.get(position).timeStamp)
+        holder.priceTV.setText("Price : " + allNotes.get(position).noteDescription)
 
         holder.deleteIV.setOnClickListener {
 
